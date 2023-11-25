@@ -242,11 +242,6 @@ img {
   margin-bottom: 8px;
 }
 
-.benefits-icon {
-  width: 64px;
-  height: 64px;
-}
-
 .benefits-title {
   color: #2e2f42;
   font-size: 20px;
@@ -323,11 +318,6 @@ img {
 
 .team-icon-link:hover {
   background-color: #404bbf;
-}
-
-.team-icon {
-  width: 16px;
-  height: 16px;
 }
 
 .instagram-icon,
@@ -464,9 +454,4 @@ img {
 
 .footer-icon-link:hover {
   background-color: #31d0aa;
-}
-
-.footer-icon {
-  width: 24px;
-  height: 24px;
 }
