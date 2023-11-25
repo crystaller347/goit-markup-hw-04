@@ -107,6 +107,23 @@ img {
   text-decoration: underline;
 }
 
+.main-page-name {
+  position: relative;
+  color: #404bbf;
+}
+
+.nav-list .main-page-name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
+}
+
 .contacts-section {
   font-style: normal;
 }
@@ -131,6 +148,13 @@ img {
 .solutions-section {
   background-color: #2e2f42;
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/solutions-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .solutions-title {
@@ -207,6 +231,19 @@ img {
   width: calc((100% - 3 * 24px) / 4);
 }
 
+.benefits-icon-section {
+  padding: 24px 100px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background-color: #f4f4fd;
+  margin-bottom: 8px;
+}
+
+.benefits-icon {
+  width: 64px;
+  height: 64px;
+}
+
 .benefits-title {
   color: #2e2f42;
   font-size: 20px;
@@ -246,7 +283,6 @@ img {
 
 .team-text {
   padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .team-employee {
@@ -265,6 +301,25 @@ img {
   margin-top: 0;
 }
 
+.team-icon-section {
+  display: flex;
+  gap: 24px;
+  margin: 8px 16px 32px;
+}
+
+.team-icon-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.team-icon {
+  width: 16px;
+  height: 16px;
+  padding: 12px;
+}
+
 /* Section 4 */
 
 .portfolio-section {
@@ -281,6 +336,9 @@ img {
 
 .portfolio-list-item {
   width: calc((100% - 2 * 24) / 3);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-item-text {
@@ -303,6 +361,29 @@ img {
   margin-top: 0;
 }
 
+.thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  color: #f4f4fd;
+  font-weight: 400;
+  background-color: #4d5ae5;
+  padding: 40px 32px 164px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms;
+}
+
+.portfolio-list-item:hover .overlay {
+  transform: translateY(0%);
+}
+
 /* Footer */
 
 .footer-section {
@@ -321,4 +402,9 @@ img {
   font-weight: 400;
   width: 264px;
   margin-top: 0;
+}
+
+.footer-title {
+  color: #fff;
+  font-weight: 500;
 }
