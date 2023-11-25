@@ -96,6 +96,7 @@ img {
 .nav-list-item {
   color: #2e2f42;
   padding: 24px 0;
+  transition: color 250ms;
 }
 
 .nav-list-item:hover,
@@ -136,6 +137,7 @@ img {
 .contact-details {
   color: #434455;
   font-weight: 400;
+  transition: color 250ms;
 }
 
 .contact-details:hover,
@@ -184,6 +186,7 @@ img {
   min-width: 169px;
   height: 56px;
   border: none;
+  transition: background-color 250ms;
 }
 
 .solutions-button:hover,
@@ -322,6 +325,13 @@ img {
   height: 16px;
 }
 
+.instagram-icon,
+.twitter-icon,
+.facebook-icon,
+.linkedin-icon {
+  fill: #f4f4fd;
+}
+
 /* Section 4 */
 
 .portfolio-section {
@@ -436,7 +446,10 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  color: #4d5ae5;
+  background-color: #4d5ae5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-icon {
