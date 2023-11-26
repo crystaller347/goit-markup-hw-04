@@ -162,6 +162,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin: 0 auto;
 }
 
 .solutions-title {
