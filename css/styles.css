@@ -410,6 +410,7 @@ img {
 .footer-logo-section {
   display: flex;
   flex-direction: column;
+  margin-right: 120px;
 }
 
 .footer-logotype {
@@ -427,7 +428,6 @@ img {
 .footer-social-media {
   display: flex;
   flex-direction: column;
-  margin-left: 120px;
 }
 
 .footer-title {
